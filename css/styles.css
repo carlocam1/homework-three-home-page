@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.site-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: ProximaNovaScOsfExtraCondensed;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+nav {
+  position: fixed;
+  height: 90px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+}
+nav .links {
+  min-width: 500px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  font-family: GillSans;
+  font-size: 15px;
+  color: #fff;
+}
+nav .links a span {
+  color: #79ADDC;
+  margin-left: 22px;
+}
+
+.home .hero {
+  height: 500px;
+}
+.home .hero .hero-image {
+  width: 100%;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .hero .hero-image .callout {
+  width: 416px;
+  height: 226px;
+  color: #fff;
+  text-align: center;
+}
+.home .hero .hero-image .callout h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  text-transform: lowercase;
+}
+.home .hero .hero-image .callout p {
+  font-size: 20px;
+  font-style: italic;
+  font-family: Gillsans;
+  line-height: 23px;
+}
+.home .hero .hero-image .callout .learn-more {
+  margin: 0 auto;
+  width: 121px;
+  height: 40px;
+  padding-top: 11px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gillsans;
+  background-color: #79ADDC;
+}
+.home .promo-trips {
+  margin-top: -50px;
+  min-height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips .trip-image {
+  width: 236px;
+  min-height: 304px;
+  margin-right: 55px;
+  margin-left: 55px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/tour-01.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips .trip-image .trip-callout {
+  width: 214px;
+  height: 192px;
+  color: #fff;
+  text-align: center;
+}
+.home .promo-trips .trip-image .trip-callout h1 {
+  font-size: 60px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.home .promo-trips .trip-image .trip-callout p {
+  font-size: 30px;
+  font-style: normal;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  margin-top: 5px;
+  margin-bottom: 65px;
+}
+.home .promo-trips .trip-image .trip-callout .more {
+  margin: 0 auto;
+  width: 133px;
+  height: 40px;
+  padding-top: 11px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gillsans;
+  background-color: #79ADDC;
+}
+.home .promo-trips .trip-image2 {
+  width: 236px;
+  min-height: 304px;
+  margin-right: 55px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/tour-02.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips .trip-image2 .trip-callout {
+  width: 214px;
+  height: 192px;
+  color: #fff;
+  text-align: center;
+}
+.home .promo-trips .trip-image2 .trip-callout h1 {
+  font-size: 60px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.home .promo-trips .trip-image2 .trip-callout p {
+  font-size: 30px;
+  font-style: normal;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  margin-top: 5px;
+  margin-bottom: 65px;
+}
+.home .promo-trips .trip-image2 .trip-callout .more {
+  margin: 0 auto;
+  width: 133px;
+  height: 40px;
+  padding-top: 11px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gillsans;
+  background-color: #79ADDC;
+}
+.home .promo-trips .trip-image3 {
+  width: 236px;
+  min-height: 304px;
+  margin-right: 55px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/tour-03.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips .trip-image3 .trip-callout {
+  width: 214px;
+  height: 192px;
+  color: #fff;
+  text-align: center;
+}
+.home .promo-trips .trip-image3 .trip-callout h1 {
+  font-size: 60px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.home .promo-trips .trip-image3 .trip-callout p {
+  font-size: 30px;
+  font-style: normal;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  margin-top: 5px;
+  margin-bottom: 65px;
+}
+.home .promo-trips .trip-image3 .trip-callout .more {
+  margin: 0 auto;
+  width: 133px;
+  height: 40px;
+  padding-top: 11px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gillsans;
+  background-color: #79ADDC;
+}
+.home .booking {
+  min-height: 400px;
+  padding: 50px;
+}
+.home .booking .booking-wrapper {
+  max-width: 818px;
+  margin: 0 auto;
+}
+.home .booking .booking-wrapper h1 {
+  font-size: 60px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.home .booking .booking-wrapper .first-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home .booking .booking-wrapper input {
+  border: 1px solid #79ADDC;
+  padding: 0 20px;
+  font-size: 18px;
+  height: 58px;
+  font-family: Gillsans;
+}
+.home .booking .booking-wrapper .first input {
+  width: 344px;
+}
+.home .booking .booking-wrapper .second input {
+  width: 453px;
+}
+.home .booking .booking-wrapper label {
+  font-size: 18px;
+  font-family: Gillsans;
+}
+.home .booking .booking-wrapper .long-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.home .booking .booking-wrapper .long-input img {
+  position: absolute;
+  right: 250px;
+  width: 30px;
+}
+.home .booking .booking-wrapper .long-input input {
+  width: 698px;
+}
+.home .booking .booking-wrapper .rooms {
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper .rooms .input-three {
+  width: 223px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .booking .booking-wrapper .rooms .input-three img {
+  position: absolute;
+  width: 20px;
+  margin-left: 195px;
+}
+.home .booking .booking-wrapper .rooms .input-three input {
+  width: 103px;
+}
+.home .booking .booking-wrapper .message {
+  height: 192px;
+  margin-bottom: 37px;
+}
+.home .booking .booking-wrapper .message input {
+  margin-top: 20px;
+  padding-bottom: 140px;
+  height: 100%;
+  width: 100%;
+}
+.home .booking .booking-wrapper .button {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  padding-top: 11px;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gillsans;
+  background-color: #79ADDC;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+}
+footer .footer-container {
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-container .copyright {
+  color: #fff;
+  font-size: 12px;
+  font-family: Gillsans;
+}
+footer .footer-container .icons img {
+  height: 70px;
+}

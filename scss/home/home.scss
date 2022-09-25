@@ -1,0 +1,337 @@
+.home {
+    .hero {
+        height: 500px;
+        // background-color: aqua;
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)) ,url(../../images/hero.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .callout {
+                width: 416px;
+                height: 226px;
+                color: #fff;
+                text-align: center;
+                h1 {
+                    font-size: 60px;
+                    font-style: normal;
+                    font-family: ProximaNovaScOsfExtraCondensed;
+                    text-transform: lowercase;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-style: italic;
+                    font-family: Gillsans;
+                    line-height: 23px;
+                    
+                }
+
+                .learn-more {
+                    margin: 0 auto;
+                    width: 121px;
+                    height: 40px;
+                    padding-top: 11px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Gillsans;
+                    background-color: #79ADDC;
+                }
+            }
+        }
+
+        
+    }
+
+    .promo-trips {
+        margin-top: -50px;
+        min-height: 304px;
+        // background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+
+
+        .trip-image {
+            width: 236px;
+            min-height: 304px;
+            margin-right: 55px;
+            margin-left: 55px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)) ,url(../../images/tour-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .trip-callout {
+                width: 214px;
+                height: 192px;
+                color: #fff;
+                text-align: center;
+                // background-color: #79ADDC;
+
+
+                h1 {
+                    font-size: 60px;
+                    margin-top: -20px;
+                    margin-bottom: -10px;
+                    font-family: 
+                    ProximaNovaScOsfExtraCondensed;
+                }
+
+                p {
+                    font-size: 30px;
+                    font-style:normal;
+                    font-family: ProximaNovaScOsfExtraCondensed;
+                    margin-top: 5px;
+                    margin-bottom: 65px;
+                    // line-height: 23px;
+                }
+
+                .more {
+                    margin: 0 auto;
+                    width: 133px;
+                    height: 40px;
+                    padding-top: 11px;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Gillsans;
+                    background-color: #79ADDC;
+
+                }
+            }
+        }
+        
+        .trip-image2 {
+            width: 236px;
+            min-height: 304px;
+            margin-right: 55px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)) ,url(../../images/tour-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .trip-callout {
+                width: 214px;
+                height: 192px;
+                color: #fff;
+                text-align: center;
+                
+                h1 {
+                    font-size: 60px;
+                    margin-top: -20px;
+                    margin-bottom: -10px;
+                    // font-style: normal;
+                    font-family: 
+                    ProximaNovaScOsfExtraCondensed;
+                }
+
+                p {
+                    font-size: 30px;
+                    font-style:normal;
+                    font-family: ProximaNovaScOsfExtraCondensed;
+                    margin-top: 5px;
+                    margin-bottom: 65px;
+                    // line-height: 23px;
+                }
+
+                .more {
+                    margin: 0 auto;
+                    width: 133px;
+                    height: 40px;
+                    padding-top: 11px;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Gillsans;
+                    background-color: #79ADDC;
+
+                }
+            }
+        }
+
+        .trip-image3 {
+            width: 236px;
+            min-height: 304px;
+            margin-right: 55px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)) ,url(../../images/tour-03.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .trip-callout {
+                width: 214px;
+                height: 192px;
+                color: #fff;
+                text-align: center;
+                // background-color: #79ADDC;
+
+
+                h1 {
+                    font-size: 60px;
+                    margin-top: -20px;
+                    margin-bottom: -10px;
+                    // font-style: normal;
+                    font-family: 
+                    ProximaNovaScOsfExtraCondensed;
+                }
+
+                p {
+                    font-size: 30px;
+                    font-style:normal;
+                    font-family: ProximaNovaScOsfExtraCondensed;
+                    margin-top: 5px;
+                    margin-bottom: 65px;
+                    // line-height: 23px;
+                }
+
+                .more {
+                    margin: 0 auto;
+                    width: 133px;
+                    height: 40px;
+                    padding-top: 11px;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Gillsans;
+                    background-color: #79ADDC;
+
+                }
+            }
+        }
+    }
+
+    .booking {
+        min-height: 400px;
+        padding: 50px;
+
+        .booking-wrapper {
+            max-width: 818px;
+            margin: 0 auto;
+            // background-color: coral ;
+
+            h1 {
+                font-size: 60px;
+                font-family: ProximaNovaScOsfExtraCondensed;
+            }
+
+            .first-second {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            input {
+                // border-color: #79ADDC;
+                border: 1px solid #79ADDC;
+                padding: 0 20px;
+                font-size: 18px;
+                height: 58px;
+                font-family: Gillsans;
+            }
+
+            .first {
+                input {
+                    width: 344px;
+                }
+                
+            }
+
+            .second {
+                input {
+                    width: 453px;
+                }
+            }
+
+            label {
+                font-size: 18px;
+                font-family: Gillsans;
+            }
+
+            .long-input {
+                // width: 818px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                
+                img {
+                    position: absolute;
+                    right: 250px;
+                    width: 30px;
+                    
+                }
+
+                input {
+                    width: 698px;
+                }
+            }
+
+            .rooms {
+                height: 58px;
+                display: flex;
+                justify-content: space-between;
+
+                .input-three {
+                    width: 223px;
+                    height: 58px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: 195px;
+                    }
+
+                    input {
+                        width: 103px;
+                    }                  
+                }
+
+            }
+
+            .message {
+                height: 192px;
+                margin-bottom: 37px;
+
+                input {
+                    margin-top: 20px;
+                    padding-bottom: 140px;
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+
+            .button {
+                margin: 0 auto;
+                    width: 100%;
+                    height: 40px;
+                    padding-top: 11px;
+                    border-radius: 25px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Gillsans;
+                    background-color: #79ADDC;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+nav {
+    position: fixed;
+    height: 90px;
+    width: 80%;
+    // background-color: cadetblue;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid  #fff;
+
+
+    .logo {
+        width: 92px;
+        height: 42px;
+    }
+
+    .links {
+        min-width: 500px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: blueviolet;
+
+        a {
+            text-decoration: none;
+            font-family: GillSans;
+            font-size: 15px;
+            color: #fff;
+            // margin-right: 20px;
+
+            span {
+                color: #79ADDC;
+                margin-left: 22px;
+            }
+
+        }
+    }
+}
