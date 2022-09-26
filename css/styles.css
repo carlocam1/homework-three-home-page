@@ -74,14 +74,22 @@ nav .links a span {
   margin-left: 22px;
 }
 
+@media only screen and (max-width: 665px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .home .hero {
-  height: 500px;
+  min-height: 500px;
 }
 .home .hero .hero-image {
   width: 100%;
   height: 500px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,20 +132,27 @@ nav .links a span {
   background-color: #79ADDC;
 }
 .home .promo-trips {
+  margin: 0 auto;
   margin-top: -50px;
+  max-width: 818px;
   min-height: 304px;
+}
+.home .promo-trips .trips-container {
+  max-width: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.home .promo-trips .trip-image {
+.home .promo-trips .trips-container .trip-image {
   width: 236px;
   min-height: 304px;
-  margin-right: 55px;
-  margin-left: 55px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-01.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
   background-position: center;
@@ -153,26 +168,26 @@ nav .links a span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home .promo-trips .trip-image .trip-callout {
+.home .promo-trips .trips-container .trip-image .trip-callout {
   width: 214px;
   height: 192px;
   color: #fff;
   text-align: center;
 }
-.home .promo-trips .trip-image .trip-callout h1 {
+.home .promo-trips .trips-container .trip-image .trip-callout h1 {
   font-size: 60px;
   margin-top: -20px;
   margin-bottom: -10px;
   font-family: ProximaNovaScOsfExtraCondensed;
 }
-.home .promo-trips .trip-image .trip-callout p {
+.home .promo-trips .trips-container .trip-image .trip-callout p {
   font-size: 30px;
   font-style: normal;
   font-family: ProximaNovaScOsfExtraCondensed;
   margin-top: 5px;
   margin-bottom: 65px;
 }
-.home .promo-trips .trip-image .trip-callout .more {
+.home .promo-trips .trips-container .trip-image .trip-callout .more {
   margin: 0 auto;
   width: 133px;
   height: 40px;
@@ -183,10 +198,9 @@ nav .links a span {
   font-family: Gillsans;
   background-color: #79ADDC;
 }
-.home .promo-trips .trip-image2 {
+.home .promo-trips .trips-container .trip-image2 {
   width: 236px;
   min-height: 304px;
-  margin-right: 55px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-02.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
   background-position: center;
@@ -202,26 +216,26 @@ nav .links a span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home .promo-trips .trip-image2 .trip-callout {
+.home .promo-trips .trips-container .trip-image2 .trip-callout {
   width: 214px;
   height: 192px;
   color: #fff;
   text-align: center;
 }
-.home .promo-trips .trip-image2 .trip-callout h1 {
+.home .promo-trips .trips-container .trip-image2 .trip-callout h1 {
   font-size: 60px;
   margin-top: -20px;
   margin-bottom: -10px;
   font-family: ProximaNovaScOsfExtraCondensed;
 }
-.home .promo-trips .trip-image2 .trip-callout p {
+.home .promo-trips .trips-container .trip-image2 .trip-callout p {
   font-size: 30px;
   font-style: normal;
   font-family: ProximaNovaScOsfExtraCondensed;
   margin-top: 5px;
   margin-bottom: 65px;
 }
-.home .promo-trips .trip-image2 .trip-callout .more {
+.home .promo-trips .trips-container .trip-image2 .trip-callout .more {
   margin: 0 auto;
   width: 133px;
   height: 40px;
@@ -232,10 +246,9 @@ nav .links a span {
   font-family: Gillsans;
   background-color: #79ADDC;
 }
-.home .promo-trips .trip-image3 {
+.home .promo-trips .trips-container .trip-image3 {
   width: 236px;
   min-height: 304px;
-  margin-right: 55px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-03.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
   background-position: center;
@@ -251,26 +264,26 @@ nav .links a span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home .promo-trips .trip-image3 .trip-callout {
+.home .promo-trips .trips-container .trip-image3 .trip-callout {
   width: 214px;
   height: 192px;
   color: #fff;
   text-align: center;
 }
-.home .promo-trips .trip-image3 .trip-callout h1 {
+.home .promo-trips .trips-container .trip-image3 .trip-callout h1 {
   font-size: 60px;
   margin-top: -20px;
   margin-bottom: -10px;
   font-family: ProximaNovaScOsfExtraCondensed;
 }
-.home .promo-trips .trip-image3 .trip-callout p {
+.home .promo-trips .trips-container .trip-image3 .trip-callout p {
   font-size: 30px;
   font-style: normal;
   font-family: ProximaNovaScOsfExtraCondensed;
   margin-top: 5px;
   margin-bottom: 65px;
 }
-.home .promo-trips .trip-image3 .trip-callout .more {
+.home .promo-trips .trips-container .trip-image3 .trip-callout .more {
   margin: 0 auto;
   width: 133px;
   height: 40px;
@@ -281,19 +294,45 @@ nav .links a span {
   font-family: Gillsans;
   background-color: #79ADDC;
 }
+@media only screen and (max-width: 710px) {
+  .home .promo-trips .trips-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/splash1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/splash1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .promo-trips .trip-image2 {
+    margin: 20px 0 20px 0;
+  }
+}
 .home .booking {
   min-height: 400px;
-  padding: 50px;
+  padding-top: 50px;
 }
 .home .booking .booking-wrapper {
   max-width: 818px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .home .booking .booking-wrapper h1 {
   font-size: 60px;
   font-family: ProximaNovaScOsfExtraCondensed;
 }
-.home .booking .booking-wrapper .first-second {
+.home .booking .booking-wrapper .input-labels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +343,7 @@ nav .links a span {
 }
 .home .booking .booking-wrapper input {
   border: 1px solid #79ADDC;
-  padding: 0 20px;
+  padding: 20px;
   font-size: 18px;
   height: 58px;
   font-family: Gillsans;
@@ -315,11 +354,25 @@ nav .links a span {
 .home .booking .booking-wrapper .second input {
   width: 453px;
 }
+@media only screen and (max-width: 800px) {
+  .home .booking .booking-wrapper .input-labels {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .booking .booking-wrapper .input-labels input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .home .booking .booking-wrapper label {
   font-size: 18px;
   font-family: Gillsans;
 }
 .home .booking .booking-wrapper .long-input {
+  min-height: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,16 +384,38 @@ nav .links a span {
           align-items: center;
   margin-bottom: 20px;
 }
-.home .booking .booking-wrapper .long-input img {
-  position: absolute;
-  right: 250px;
+.home .booking .booking-wrapper .long-input .icon-image {
   width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 770px;
 }
 .home .booking .booking-wrapper .long-input input {
   width: 698px;
 }
+@media only screen and (max-width: 800px) {
+  .home .booking .booking-wrapper .long-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .home .booking .booking-wrapper .long-input .icon-image {
+    position: absolute;
+    margin-top: 35px;
+    right: 20px;
+  }
+  .home .booking .booking-wrapper .long-input input {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 .home .booking .booking-wrapper .rooms {
-  height: 58px;
+  width: 100%;
+  min-height: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,6 +444,21 @@ nav .links a span {
 .home .booking .booking-wrapper .rooms .input-three input {
   width: 103px;
 }
+@media only screen and (max-width: 670px) {
+  .home .booking .booking-wrapper .rooms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .booking .booking-wrapper .rooms input {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 .home .booking .booking-wrapper .message {
   height: 192px;
   margin-bottom: 37px;
@@ -390,6 +480,25 @@ nav .links a span {
   font-size: 15px;
   font-family: Gillsans;
   background-color: #79ADDC;
+}
+@media only screen and (max-width: 820px) {
+  .home .booking {
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0))), url(../images/splash2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(../images/splash2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer {
